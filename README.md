@@ -1,1 +1,2 @@
-# FPGA-Matrix-Accelerator
+This project replicates the methods from the paper "Fast Inner-Product Algorithms and Architectures for Deep Neural Network Accelerators" (T. E. Pogue, N. Nicolici, IEEE Transactions on Computers). It implements Baseline, FIP, and FFIP matrix multiplication methods on FPGA to verify their efficiency and performance improvements.
+The implementation is tested on [your FPGA platform], using [your programming language/toolchain].
