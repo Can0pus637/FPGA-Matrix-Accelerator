@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log SystolicArray.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SystolicArray.tcl
+EAStep vivado -log Base_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Base_top.tcl

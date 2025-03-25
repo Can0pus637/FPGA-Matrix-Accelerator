@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sim_1/new/tb_LUT.sv,1742738228,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sim_1/new/tb_TOP.sv,,tb_LUT,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sim_1/new/tb_TOP.sv,1742736883,systemVerilog,,,,tb_top_module,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/Array_Input.sv,1742736883,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/LUT.sv,,Array_Input,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/LUT.sv,1742738790,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/SA.sv,,LUT,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/SA.sv,1742733615,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/TOP_OBC.sv,,SA,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/TOP_OBC.sv,1742736883,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/random_matrix.sv,,TOP_OBC,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sources_1/new/random_matrix.sv,1742738821,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_OBC/DA_OBC.srcs/sim_1/new/tb_TOP.sv,,random_matrix,,uvm,,,,,,

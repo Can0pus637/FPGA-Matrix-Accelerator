@@ -1,0 +1,126 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIP_top_behav xil_defaultlib.tb_FIP_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 2 for port 'A_in' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv:82]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 2 for port 'B_in' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv:83]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 2 for port 'A_in' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv:101]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 2 for port 'B_in' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv:102]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/FIP_top.sv" Line 1. Module FIP_top(M=6,N=6,K=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Systolic_Array.sv" Line 1. Module Systolic_Array(DATA_WIDTH=2,M=6,N=6,K=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv" Line 2. Module Alpha_Beta_cal(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/random_matrix.v" Line 1. Module random_matrix(M=6,K=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/FIP_top.sv" Line 1. Module FIP_top(M=6,N=6,K=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Systolic_Array.sv" Line 1. Module Systolic_Array(DATA_WIDTH=2,M=6,N=6,K=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/PE.sv" Line 1. Module PE(DATA_WIDTH=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_cal.sv" Line 2. Module Alpha_Beta_cal(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" Line 1. Module Alpha_Beta_PE(DATA_WIDTH=2,K=6,M=6,N=6) doesn't have a timescale but at least one module in design has a timescale.
+INFO: [Common 17-14] Message 'XSIM 43-4099' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.IBUFGDS
+Compiling module xil_defaultlib.PE(DATA_WIDTH=2)
+Compiling module xil_defaultlib.Systolic_Array(DATA_WIDTH=2,M=6,...
+Compiling module xil_defaultlib.Alpha_Beta_PE(DATA_WIDTH=2,K=6,M...
+Compiling module xil_defaultlib.Alpha_Beta_cal(DATA_WIDTH=2,K=6,...
+Compiling module xil_defaultlib.random_matrix(M=6,K=6,N=6)
+Compiling module xil_defaultlib.FIP_top(M=6,N=6,K=6)
+Compiling module xil_defaultlib.tb_FIP_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_FIP_top_behav

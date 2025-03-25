@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../DA_TC.srcs/sources_1/new/Array_Input.sv" \
+"../../../../DA_TC.srcs/sources_1/new/LUT.sv" \
+"../../../../DA_TC.srcs/sources_1/new/SA.sv" \
+"../../../../DA_TC.srcs/sources_1/new/TOP_TC.sv" \
+"../../../../DA_TC.srcs/sources_1/new/random_matrix.sv" \
+"../../../../DA_TC.srcs/sim_1/new/tb_top_module.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

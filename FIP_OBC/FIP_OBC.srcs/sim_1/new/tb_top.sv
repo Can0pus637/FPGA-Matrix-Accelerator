@@ -1,0 +1,84 @@
+`timescale 1ns/1ps
+
+module tb_top;
+
+  // 参数定义
+  parameter DATA_WIDTH = 3;
+  parameter M = 4;
+  parameter N = 4;
+  parameter K = 4;
+
+  logic clk;
+  logic rst;
+
+  // 实例化 TOP_TC 模块
+  TOP_OBC #(
+    .DATA_WIDTH(DATA_WIDTH),
+    .M(M),
+    .N(N),
+    .K(K)
+  ) uut (
+    .clk(clk),
+    .rst(rst),
+    .C_out()  // 你可以在TB中不直接连接C_out，或者通过层次引用打印
+  );
+
+  // 时钟生成：周期 10ns
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk;
+  end
+
+  // 复位脉冲：20ns 后释放复位
+  initial begin
+    rst = 1;
+    #20;
+    rst = 0;
+  end
+
+  // 每个时钟周期打印内部信号：
+  // - random_matrix 中的 clk_counter 和生成的矩阵 A、B
+  // - FIP_TC 模块生成的 C_out
+  always @(posedge clk) begin
+    integer i, j;
+    $display("-------------------------------------------------------");
+    $display("Time: %0t", $time);
+    
+    // 如果 random_matrix 模块中有 clk_counter 信号，请打印之
+    $display("random_matrix clk_counter = %0d", uut.u_random_matrix.clk_counter);
+    
+    // 打印 A 矩阵（由 random_matrix 生成）
+    $display("Matrix A:");
+    for (i = 0; i < M; i = i + 1) begin
+      $write("A[%0d]: ", i);
+      for (j = 0; j < K; j = j + 1)
+        $write("%0d ", uut.u_random_matrix.A[i][j]);
+      $display("");
+    end
+
+    // 打印 B 矩阵（由 random_matrix 生成）
+    $display("Matrix B:");
+    for (i = 0; i < K; i = i + 1) begin
+      $write("B[%0d]: ", i);
+      for (j = 0; j < N; j = j + 1)
+        $write("%0d ", uut.u_random_matrix.B[i][j]);
+      $display("");
+    end
+
+    // 打印 C_out 矩阵（由 FIP_TC 生成）
+    $display("Matrix C_out:");
+    for (i = 0; i < M; i = i + 1) begin
+      $write("C_out[%0d]: ", i);
+      for (j = 0; j < N; j = j + 1)
+        $write("%0d ", uut.C_out[i][j]);
+      $display("");
+    end
+  end
+
+  // 仿真一定时间后结束
+  initial begin
+    #3000;
+    $finish;
+  end
+
+endmodule

@@ -1,0 +1,21 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 8 for port 'C_out' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:48]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 8 for port 'C_out' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:77]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 8 for port 'C_out' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP_TC/FIP_TC.srcs/sources_1/new/FIP_TC.sv:109]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.random_matrix
+Compiling module xil_defaultlib.SA(DATA_WIDTH=3,K=2)
+Compiling module xil_defaultlib.LUT(DATA_WIDTH=3,K=2)
+Compiling module xil_defaultlib.FIP_TC_default
+Compiling module xil_defaultlib.TOP_TC
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

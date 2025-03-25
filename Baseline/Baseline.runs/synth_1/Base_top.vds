@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Mar 18 11:12:29 2025
+# Process ID: 30320
+# Current directory: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1
+# Command line: vivado.exe -log Base_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Base_top.tcl
+# Log file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1/Base_top.vds
+# Journal file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1\vivado.jou
+# Running On: CANOPUS637, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 16, Host memory: 33736 MB
+#-----------------------------------------------------------
+source Base_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/utils_1/imports/synth_1/SystolicArray.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/utils_1/imports/synth_1/SystolicArray.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Base_top -part xczu7ev-ffvc1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28236
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2930.734 ; gain = 339.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Base_top' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (0#1) [C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:71834]
+INFO: [Synth 8-6157] synthesizing module 'random_matrix' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/random_matrix.sv:1]
+	Parameter DATA_WIDTH bound to: 32'sb00000000000000000000000000000010 
+	Parameter M bound to: 32'sb00000000000000000000000000000100 
+	Parameter K bound to: 32'sb00000000000000000000000000000100 
+	Parameter N bound to: 32'sb00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'random_matrix' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/random_matrix.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SystolicArray' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:1]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter M bound to: 4 - type: integer 
+	Parameter N bound to: 4 - type: integer 
+	Parameter K bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'PE' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/PE.sv:1]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'PE' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/PE.sv:1]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7071] port 'done_cal_flag' of module 'PE' is unconnected for instance 'pe_inst' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+WARNING: [Synth 8-7023] instance 'pe_inst' of module 'PE' has 9 connections declared, but only 8 given [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'SystolicArray' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:59]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1/.Xil/Vivado-30320-CANOPUS637/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1/.Xil/Vivado-30320-CANOPUS637/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-226] default block is never used [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:109]
+INFO: [Synth 8-6155] done synthesizing module 'Base_top' (0#1) [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element seed_local_reg was removed.  [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/random_matrix.sv:39]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'randomGen'. This will prevent further optimization [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:34]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila_0'. This will prevent further optimization [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:59]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'systolicArray'. This will prevent further optimization [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/Base_top.sv:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3029.352 ; gain = 438.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3047.262 ; gain = 456.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3047.262 ; gain = 456.047
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3059.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_0'
+Finished Parsing XDC File [c:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila_0'
+Parsing XDC File [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/constrs_1/new/base.xdc]
+Finished Parsing XDC File [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/constrs_1/new/base.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/constrs_1/new/base.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Base_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Base_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3152.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3152.910 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3152.910 ; gain = 561.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3152.910 ; gain = 561.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3152.910 ; gain = 561.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Base_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   S_GEN |                             0001 |                               00
+                   S_CAL |                             0010 |                               01
+                  S_WAIT |                             0100 |                               10
+                   S_GAP |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Base_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 3152.910 ; gain = 561.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 32    
++---Registers : 
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 16    
+	                2 Bit    Registers := 72    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 16    
+	   2 Input    4 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 8     
+	   2 Input    2 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][0][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][0][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][0][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][0][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][0][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][1][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][1][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][1][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][1][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][1][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][2][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][2][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][2][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][2][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][2][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][3][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][3][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][3][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][3][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[0][3][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][0][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][0][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][0][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][0][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][0][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][1][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][1][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][1][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][1][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][1][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][2][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][2][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][2][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][2][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][2][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][3][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][3][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][3][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][3][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[1][3][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][0][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][0][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][0][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][0][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][0][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][1][4]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][1][3]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][1][2]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][1][1]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'systolicArray/C_reg[2][1][0]__0/Q' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:54]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.srcs/sources_1/new/SystolicArray.sv:53]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 3152.910 ; gain = 561.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3597.684 ; gain = 1006.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3597.684 ; gain = 1006.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 3616.789 ; gain = 1025.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |ila     |     1|
+|2     |BUFG    |     1|
+|3     |LUT2    |     4|
+|4     |LUT3    |    10|
+|5     |LUT4    |    15|
+|6     |LUT5    |     5|
+|7     |LUT6    |     4|
+|8     |FDCE    |    35|
+|9     |FDPE    |     2|
+|10    |IBUF    |     1|
+|11    |IBUFGDS |     1|
+|12    |OBUF    |    80|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 672 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 3623.559 ; gain = 926.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3623.559 ; gain = 1032.344
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3631.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3670.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IBUFGDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Synth Design complete, checksum: db62d046
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 35 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 3670.875 ; gain = 2188.301
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/Baseline/Baseline.runs/synth_1/Base_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Base_top_utilization_synth.rpt -pb Base_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 18 11:13:11 2025...

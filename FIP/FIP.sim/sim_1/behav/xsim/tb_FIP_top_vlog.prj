@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../FIP.srcs/sources_1/new/Alpha_Beta_PE.sv" \
+"../../../../FIP.srcs/sources_1/new/Alpha_Beta_cal.sv" \
+"../../../../FIP.srcs/sources_1/new/FIP_top.sv" \
+"../../../../FIP.srcs/sources_1/new/PE.sv" \
+"../../../../FIP.srcs/sources_1/new/Systolic_Array.sv" \
+"../../../../FIP.srcs/sources_1/new/random_matrix.v" \
+"../../../../FIP.srcs/sim_1/new/tb_FIP_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

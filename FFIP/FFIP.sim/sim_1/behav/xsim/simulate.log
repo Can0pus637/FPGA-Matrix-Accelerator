@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Time                22000: g1_out =  12, g2_out =   6, C_out =     10
+After clear, Time                32000: g1_out =   0, g2_out =   0, C_out =      0
+Time                42000: g1_out =  16, g2_out =   5, C_out =      5
+$finish called at time : 62 ns : File "C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FFIP/FFIP.srcs/sim_1/new/PE_tb.sv" Line 99

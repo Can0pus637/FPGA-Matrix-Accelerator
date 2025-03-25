@@ -6,10 +6,10 @@ module PE_tb;
     // 信号声明
     logic clk;
     logic rst;
-    logic signed [DATA_WIDTH-1:0] A_in, B_in;
-    logic signed [(2*DATA_WIDTH)-1:0] C_in;
-    logic signed [DATA_WIDTH-1:0] A_out, B_out;
-    logic signed [(2*DATA_WIDTH)-1:0] C_out;
+    logic  [DATA_WIDTH-1:0] A_in, B_in;
+    logic  [(2*DATA_WIDTH):0] C_in;
+    logic  [DATA_WIDTH-1:0] A_out, B_out;
+    logic  [(2*DATA_WIDTH):0] C_out;
     logic valid_A, valid_B;
 
     // 实例化 PE
@@ -43,18 +43,18 @@ module PE_tb;
 
         // **2. 测试数据传输（无计算）**
         #10;
-        A_in = 8'd3; B_in = 8'd4; valid_A = 1; valid_B = 0;  // 仅传输 A
+        A_in = 8'd3; B_in = 8'd4; 
         #10;
-        A_in = 8'd5; B_in = 8'd6; valid_A = 0; valid_B = 1;  // 仅传输 B
+        A_in = 8'd5; B_in = 8'd6; 
         #10;
-        A_in = 8'd7; B_in = 8'd8; valid_A = 1; valid_B = 1;  // 传输 A、B 并计算
+        A_in = 8'd7; B_in = 8'd8; 
 
         // **3. 测试计算（MAC）**
         #10;
         C_in = 16'd10;  // **初始 C 值**
-        A_in = 8'd2; B_in = 8'd3; valid_A = 1; valid_B = 1;  // 计算 C = 10 + 2×3 = 16
+        A_in = 8'd2; B_in = 8'd3; 
         #10;
-        A_in = 8'd4; B_in = 8'd5; valid_A = 1; valid_B = 1;  // 计算 C = 16 + 4×5 = 36
+        A_in = 8'd4; B_in = 8'd5; 
         #10;
         valid_A = 0; valid_B = 0;  // 停止输入，C_out 应该保持 36
 

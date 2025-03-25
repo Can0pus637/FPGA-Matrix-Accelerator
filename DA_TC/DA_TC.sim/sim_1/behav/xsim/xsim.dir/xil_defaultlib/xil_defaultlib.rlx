@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_Array_Input.sv,1742612668,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_LUT.sv,,tb_Array_Input,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_LUT.sv,1742605950,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_randomarry.sv,,tb_LUT,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_random_matrix.sv,1742613989,systemVerilog,,,,tb_random_matrix,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_top_module.sv,1742618078,systemVerilog,,,,tb_top_module,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/Array_Input.sv,1742618885,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/LUT.sv,,Array_Input,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/LUT.sv,1742614953,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/SA.sv,,LUT,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/SA.sv,1742612512,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/TOP_TC.sv,,SA,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/TOP_TC.sv,1742700591,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/random_matrix.sv,,TOP_TC,,uvm,,,,,,
+C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sources_1/new/random_matrix.sv,1742618497,systemVerilog,,C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/DA_TC/DA_TC.srcs/sim_1/new/tb_top_module.sv,,random_matrix,,uvm,,,,,,

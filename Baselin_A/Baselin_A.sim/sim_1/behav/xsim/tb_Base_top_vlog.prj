@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Baselin_A.srcs/sources_1/new/Base_top.sv" \
+"../../../../Baselin_A.srcs/sources_1/new/FE.sv" \
+"../../../../Baselin_A.srcs/sources_1/new/SystolicArray.sv" \
+"../../../../Baselin_A.srcs/sources_1/new/random_matrix.sv" \
+"../../../../Baselin_A.srcs/sim_1/new/tb_Base_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Mar 18 10:35:42 2025
+# Process ID: 26348
+# Current directory: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.runs/synth_1
+# Command line: vivado.exe -log FIP_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIP_top.tcl
+# Log file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.runs/synth_1/FIP_top.vds
+# Journal file: C:/Users/Boyang/Desktop/FPGA-Matrix-Accelerator/FIP/FIP.runs/synth_1\vivado.jou
+# Running On: CANOPUS637, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 16, Host memory: 33736 MB
+#-----------------------------------------------------------
+source FIP_top.tcl -notrace
